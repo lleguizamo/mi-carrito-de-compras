@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conqui</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" type="module" defer></script>
+</head>
+<body>
+
+    <!--loader-->
+    
+      <div class="loader">
+        <div class="loader__container">
+            <span></span>
+        </div>
+      </div>
+
+    <!--  header  --> 
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">
+                <svg xmlns="" viewBox="0 0 48.92 56.48" class="logo--icon">
+                    <path fill="currentColor" d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                    </path>
+                  </svg>
+            </a>
+            <div class="nav__menu">
+                <button type="button"  class="nav__btn btn--close">
+                    <i class='bx bx-x'></i>
+                </button>
+
+                <ul class="nav__list">
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">Productos</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">Emprende</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__buttons"></div>
+
+            <button type="button" class="nav__btn btn--cart">
+                <i class='bx bxs-shopping-bag-alt'></i>
+                <span class="notify">0</span>
+            </button>
+
+            <button type="button" class="nav__btn btn--menu">
+                <i class='bx bx-menu'></i>
+            </button>
+        </nav>
+    </header>
+
+    <!--main-->
+
+    <main class="main">
+        <section class="produtcs section">
+            <h2 class="products__title section--title">Productos</h2>
+            <div class="products__container container"></div>
+        </section>
+    </main>
+
+    <!--cart-->
+
+    <div class="cart">
+        <div class="cart__container">
+            <div class="cart__header">
+                <h3 class="cart__title">Carrito de compras</h3>
+                <button type="button" class="cart__btn btn--close">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+            <div class="cart__body">
+               <article class="article">
+                <div class="article__image">
+                    <img src="assets/css/img/capotero-verde.png" alt="producto 1">
+                </div>
+                <div class="article__content">
+                    <h3 class="article__title">hoodie combinado mujer</h3>
+                    <span class="article__price">$100</span>
+                    <div class="article__quantity">
+                       <button type="button" class="article__quantity-btn article--minus">
+                        <i class='bx bx-minus'></i>
+                       </button> 
+                       <span class="article__quantity--text">1</span>
+                       <button type="button" class="article__quantity-btn article--plus">
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <button type="button" class="article__btn remove-from-cart">
+                        <i class="bx bx-trash"></i>
+                    </button>
+                </div>
+               </article> 
+
+            </div>
+            <div class="cart__footer">
+                <div class="cart__count">
+                   <span class="cart__count--text">articulos</span> 
+                   <span class="cart__count--item">0</span> 
+                </div>
+                <div class="cart__total">
+                   <span class="cart__total--text">total</span> 
+                   <span class="cart__total--item">$0</span> 
+                </div>
+                <button type="button" class="cart__btn btn--buy">Comprar</button>
+            </div>
+        </div>
+    </div>
+    
+  
+    <!--Footer-->
+
+    <footer class="footer section">
+        <div class="footer__container container">
+          <div class="footer__top">
+            <div class="footer__left">
+                <h3 class="footer__title">Acerca de Nosotros</h3>
+                <p class="footer__text">descripcion, nombre cmplreto, una descipcion mia.</p>
+            </div>
+            <div class="footer__right">
+                <h3 class="footer__title">Nuetras Redes</h3>
+                <ul class="footer__social">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <i class='bx bxl-whatsapp-square'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>  
+          <div class="footer__bottom">
+            <p class="footer__text">Todos los derechos reservados</p>
+          </div>   
+        </div>
+    </footer>
+
+
+
+    
+</body>
+</html>
